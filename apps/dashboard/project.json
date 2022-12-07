@@ -12,14 +12,20 @@
         "outputPath": "dist/apps/dashboard",
         "index": "apps/dashboard/src/index.html",
         "main": "apps/dashboard/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js",
+          "apps/dashboard/src/polyfills.ts"
+        ],
         "tsConfig": "apps/dashboard/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           "apps/dashboard/src/favicon.ico",
           "apps/dashboard/src/assets"
         ],
-        "styles": ["apps/dashboard/src/styles.scss"],
+        "styles": [
+          "node_modules/bootstrap/scss/bootstrap.scss",
+          "apps/dashboard/src/styles.scss"
+        ],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/dashboard/webpack.config.js"
